@@ -27,7 +27,7 @@
         "project_name": "Cypress BrowserStack Tests",
         "build_name": "build-name",
         "exclude": [],
-        "parallels": 1,
+        "parallels": "1",
         "npm_dependencies": {},
         "package_config_options": {},
         "headless": true
