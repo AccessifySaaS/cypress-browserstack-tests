@@ -1,0 +1,21 @@
+{
+  "browsers": [{
+      "browser": "chrome",
+      "os": "Windows 10",
+      "versions": ["latest", "latest - 1"]
+    },
+  ],
+  "run_settings": {
+    "cypress_config_file": "./cypress.config.js",
+    "cypress_version": "12.3",
+    "npm_dependencies": {
+      "cypress": "12.3",
+      "npm-package-you-need-to-run-tests-1": "^1.2.1",
+      "npm-package-you-need-to-run-tests-2": "^7.1.6-beta.13"
+    },
+    "project_name": "Cypress sample build",
+    "build_name": "Build no: 1",
+    "parallels": 5,
+    "exclude": ["some-folder/test.js", "static/*.pdf"]
+  }
+}
