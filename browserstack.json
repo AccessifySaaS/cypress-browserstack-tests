@@ -3,7 +3,7 @@
       "browser": "chrome",
       "os": "Windows 10",
       "versions": ["latest", "latest - 1"]
-    },
+    }
   ],
   "run_settings": {
     "cypress_config_file": "./cypress.config.js",
