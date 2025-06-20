@@ -26,4 +26,4 @@ jobs:
         run: npm install -g browserstack-cypress-cli
 
       - name: 'Running test on BrowserStack with local testing enabled'  # Invokes the actual test script that would run on BrowserStack browsers
-        run: - run: BROWSERSTACK_LOCAL=true browserstack-cypress run # See sample test script above
+        run: BROWSERSTACK_LOCAL=true browserstack-cypress run # See sample test script above
