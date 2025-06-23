@@ -1,9 +1,9 @@
-const domains = require('../fixtures/domains.js');
+// const domains = require('../fixtures/domains.js');
 
-domains.forEach((domain) => {
-  if (!domain.forms.newsletter) return 
+// domains.forEach((domain) => {
+//   if (!domain.forms.newsletter) return 
 
-  describe(`Newsletter form, structure and functionality test for ${domain.name}`, () => {
+  describe(`Newsletter form, structure and functionality test for Artemis`, () => {
 
   beforeEach(() => {
     cy.visit(`https://admin.artemis.accessify.cloud/PostOffice/Form/aff8de78-01fe-47b6-9c76-abb5438c97c8`)
@@ -42,7 +42,7 @@ domains.forEach((domain) => {
   });
 });
 
-})
+// })
 
 
 
