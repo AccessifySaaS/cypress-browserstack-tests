@@ -32,8 +32,8 @@ jobs:
       - name: 'Testing Artemis'  
         run: browserstack-cypress run --headed --env BASE_URL=https://admin.artemis.accessify.cloud BROWSERSTACK_LOCAL=false
 
-      - name: 'Testing Artemis'  
+      - name: 'Testing Development Artemis'  
         run:  browserstack-cypress run --headed --env BASE_URL=https://admin.development.artemis.accessify.cloud BROWSERSTACK_LOCAL=false
 
-      - name: 'Testing Artemis'  
+      - name: 'Testing Hermes'  
         run:  browserstack-cypress run --headed --env BASE_URL=https://admin.hermes.accessify.cloud BROWSERSTACK_LOCAL=false
