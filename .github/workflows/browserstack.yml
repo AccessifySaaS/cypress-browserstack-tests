@@ -29,5 +29,11 @@ jobs:
       - name: 'Installing browserstack-cypress-cli'
         run: npm install -g browserstack-cypress-cli
 
-      - name: 'Testing Artemis'  # Invokes the actual test script that would run on BrowserStack browsers
-        run: BROWSERSTACK_LOCAL=false browserstack-cypress run --headed --env BASE_URL=https://admin.artemis.accessify.cloud # See sample test script above
+      - name: 'Testing Artemis'  
+        run: browserstack-cypress run --headed --env BASE_URL=https://admin.artemis.accessify.cloud BROWSERSTACK_LOCAL=false
+
+      - name: 'Testing Artemis'  
+        run:  browserstack-cypress run --headed --env BASE_URL=https://admin.development.artemis.accessify.cloud BROWSERSTACK_LOCAL=false
+
+      - name: 'Testing Artemis'  
+        run:  browserstack-cypress run --headed --env BASE_URL=https://admin.hermes.accessify.cloud BROWSERSTACK_LOCAL=false
