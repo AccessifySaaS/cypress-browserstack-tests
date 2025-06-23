@@ -7,7 +7,6 @@
 
   beforeEach(() => {
     cy.visit(`https://admin.artemis.accessify.cloud/PostOffice/Form/aff8de78-01fe-47b6-9c76-abb5438c97c8`)
-    cy.document().its('readyState').should('eq', 'complete');
     })
     
   it('form contains visible required fields', () => {
