@@ -5,11 +5,12 @@
 
   describe(`Newsletter form, structure and functionality test for Artemis`, () => {
 
-  beforeEach(() => {
-    cy.visit(`https://admin.artemis.accessify.cloud/PostOffice/Form/aff8de78-01fe-47b6-9c76-abb5438c97c8`)
-  })
-
+  // beforeEach(() => {
+    
+    // })
+    
   it('form contains visible required fields', () => {
+    cy.visit(`https://admin.artemis.accessify.cloud/PostOffice/Form/aff8de78-01fe-47b6-9c76-abb5438c97c8`)
     cy.get('input[required]').should('have.length.at.least', 1)
 
     cy.get('input[required]').each((el) => {
@@ -19,6 +20,7 @@
   });
 
   it('form submits correctly if required fields are filled', () => {
+    cy.visit(`https://admin.artemis.accessify.cloud/PostOffice/Form/aff8de78-01fe-47b6-9c76-abb5438c97c8`)
     cy.get('input[required]').each((el) => {
       const type = el.attr('type')
 
