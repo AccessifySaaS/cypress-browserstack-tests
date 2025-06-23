@@ -6,7 +6,7 @@ domains.forEach((domain) => {
   describe(`Newsletter form, structure and functionality test for ${domain.name}`, () => {
 
   beforeEach(() => {
-    cy.visit(`https://artemis.accessify.cloud/PostOffice/Form/aff8de78-01fe-47b6-9c76-abb5438c97c8`)
+    cy.visit(`https://admin.artemis.accessify.cloud/PostOffice/Form/aff8de78-01fe-47b6-9c76-abb5438c97c8`)
   })
 
   it('form contains visible required fields', () => {
