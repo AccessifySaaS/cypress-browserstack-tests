@@ -2,8 +2,8 @@ name: 'BrowserStack Test'
 on:
   push:
   pull_request:
-  schedule:
-    - cron: '0 3 * * *'
+  # schedule:
+  #   - cron: '0 3 * * *'
 jobs:
   ubuntu-job:
     name: 'BrowserStack Test on Ubuntu'
@@ -30,10 +30,13 @@ jobs:
         run: npm install -g browserstack-cypress-cli
 
       - name: 'Testing Artemis'  
-        run: browserstack-cypress run --headed --env BASE_URL=https://admin.artemis.accessify.cloud BROWSERSTACK_LOCAL=false
+        run: browserstack-cypress run --headed --env BROWSERSTACK_LOCAL=false
 
-      - name: 'Testing Development Artemis'  
-        run:  browserstack-cypress run --headed --env BASE_URL=https://admin.development.artemis.accessify.cloud BROWSERSTACK_LOCAL=false
+      # - name: 'Testing Artemis'  
+      #   run: browserstack-cypress run --headed --env BASE_URL=https://admin.artemis.accessify.cloud BROWSERSTACK_LOCAL=false
 
-      - name: 'Testing Hermes'  
-        run:  browserstack-cypress run --headed --env BASE_URL=https://admin.hermes.accessify.cloud BROWSERSTACK_LOCAL=false
+      # - name: 'Testing Development Artemis'  
+      #   run:  browserstack-cypress run --headed --env BASE_URL=https://admin.development.artemis.accessify.cloud BROWSERSTACK_LOCAL=false
+
+      # - name: 'Testing Hermes'  
+      #   run:  browserstack-cypress run --headed --env BASE_URL=https://admin.hermes.accessify.cloud BROWSERSTACK_LOCAL=false

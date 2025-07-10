@@ -4,10 +4,10 @@ const domains = [
 ]
 
 domains.forEach((domain) => {
-  describe(`Newsletter form, structure and functionality test for ${domain}`, () => {
+  describe(`"Afspraak maken" form, structure and functionality test for ${domain}`, () => {
 
   beforeEach(() => {
-    cy.visit(`https://admin.${domain}.accessify.cloud/PostOffice/Form/aff8de78-01fe-47b6-9c76-abb5438c97c8`)
+    cy.visit(`https://admin.${domain}.accessify.cloud/PostOffice/Form/6efd6eb5-fe92-4cf7-bfa5-74c3bfd44cf4`)
   })
     
   it('form contains visible required fields', () => {
